@@ -11,6 +11,7 @@ export const getSubscriberInvitesCountRoute: FastifyPluginAsyncZod = async (
       schema: {
         summary:
           "Quantidade de inscrições realmente realizadas a partir de um usuário",
+        operationId: "getSubscriberInviteCount",
         tags: ["referral"],
         params: z.object({
           subscriberId: z.string(),

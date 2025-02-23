@@ -8,6 +8,7 @@ export const getRankingRoute: FastifyPluginAsyncZod = async (app) => {
     {
       schema: {
         summary: "Ranking geral",
+        operationId: "getRanking",
         tags: ["ranking"],
         response: {
           200: z.object({
